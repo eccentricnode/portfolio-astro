@@ -4,27 +4,54 @@
   data-netlify="true"
   data-netlify-recaptcha="true"
   netlify-honeypot="company-field">
+  <div class="contact-card">
+    <div class="contact-form">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p class="hidden">
+        <label>
+          Company: <input name="company-field" />
+        </label>
+      </p>
+      <p>
+        <label>Your Email: </label>
+        <input type="email" name="email" />
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <div data-netlify-recaptcha="true"></div>
+    </div>
+    <button class="primary" type="submit">Send</button>
+  </div>
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p class="hidden">
-    <label>
-      Company: <input name="company-field" />
-    </label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button type="submit">Send</button>
   </p>
 </form>
 
 <style>
+  .contact-card {
+    border: 1px solid #404f6a;
+    border-radius: 5px;
+    box-shadow:  0 5px 25px rgba(0, 0, 0, 0.2);
+    margin: 5rem 10rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    /* align-items: center; */
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
   .hidden {
     display: none;
   }
