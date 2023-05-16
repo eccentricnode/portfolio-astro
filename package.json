@@ -15,6 +15,7 @@
     "@astrojs/rss": "^2.4.0",
     "@astrojs/sitemap": "^1.2.2",
     "astro": "^2.2.1",
+    "astro-iconify": "^1.2.0",
     "sass": "^1.62.1"
   }
 }

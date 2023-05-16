@@ -9,6 +9,16 @@ import { Image } from '@astrojs/image/components';
 ---
 
 <BaseLayout>
+	<section id="intro">
+		<p class="name">Hi, my name is <span>Austin Johnson.</span></p>
+	
+		<h2>I build the Front End <br> of Enterprise Web Applications.</h2>
+	
+		<p>I'm developer specializing in Angular, Typescript, HTML, CSS, ASP.NET and C#.</p>
+	
+		<p>Currently, I'm working at <a>SwissRe Inc.</a></p>
+	</section>
+	
 	<div class="introduction-hero">
 		<div class="introduction-text">
 				<h1>Austin Johnson</h1>
@@ -32,11 +42,32 @@ import { Image } from '@astrojs/image/components';
 
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
+
+	
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--nord7);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
