@@ -6,8 +6,10 @@ import Icon from 'astro-iconify';
   <ul>
     <li>
       <h1><a href="index.html">
-        <span></span><Icon name="ph:terminal-fill" width="50" aria-hidden="true"></Icon>
-        <span class="">Austin Johnson</span>
+        <span class="">
+          <Icon name="ph:terminal-fill" width="50" aria-hidden="true" />
+          Austin Johnson
+        </span>
       </a></h1>
     </li>
     <li><a href="blog">Blog</a></li>
@@ -63,17 +65,14 @@ nav li:first-child {
   color: var(--nord9);
 }
 
+nav h1 span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 nav h1 span:hover {
-  color: var(--nord9)
-}
-
-nav [class*="fa-"] {
-  font-size: 150%;
   color: var(--nord9);
-}
-
-nav [class*="fa-"]:hover {
-  color: var(--nord8);
 }
 
 nav a {

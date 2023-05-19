@@ -9,34 +9,30 @@ import { Image } from '@astrojs/image/components';
 ---
 
 <BaseLayout>
-	<section id="intro">
-		<p class="name">Hi, my name is <span>Austin Johnson.</span></p>
-	
-		<h2>I build the Front End <br> of Enterprise Web Applications.</h2>
-	
-		<p>I'm developer specializing in Angular, Typescript, HTML, CSS, ASP.NET and C#.</p>
-	
-		<p>Currently, I'm working at <a>SwissRe Inc.</a></p>
-	</section>
-	
-	<div class="introduction-hero">
+	<section id="intro" class="introduction-hero">
 		<div class="introduction-text">
-				<h1>Austin Johnson</h1>
-				<h3>Full-Stack Web Developer<br> Based out of Phoenix, Arizona</h3>
+			<p class="name">Hi, my name is <span>Austin Johnson.</span></p>
+		
+			<div class="introduction-description-text">
+				<h2>I build the Front End <br> of Enterprise Web Applications.</h2>
+			
+				<p>I'm a developer specializing in Angular, Typescript, HTML, CSS, ASP.NET and C#.</p>
+			
+				<p>Currently, I'm working at <a>SwissRe Inc.</a></p>
+			</div>
 		</div>
 		<Image src="/profile.jpg"
 			class="border-radius"
 			width={300}
 			height={450}
-			aspectRatio="900x1200"
 			format="png"
 			alt="A rocket blasting off."
 		/>
-	</div>
+	</section>
+	
 	<div class="skills">
-		
+		skills section
 	</div>
-	<p>Here is some content</p>
 	<ContactForm></ContactForm>
 </BaseLayout>
 
@@ -44,6 +40,9 @@ import { Image } from '@astrojs/image/components';
 <style>
 #intro {
   padding-bottom: 10rem;
+	@media((max-width:30em)) {
+		padding-bottom: 35rem;
+	}
 }
 
 #intro p {
@@ -57,13 +56,13 @@ import { Image } from '@astrojs/image/components';
 
 .name span {
   font-family: var(--sans);
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--nord7);
   display: block;
 }
 
 #intro h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 	h1 {
@@ -82,7 +81,6 @@ import { Image } from '@astrojs/image/components';
 		justify-content: center;
 		align-items: center;
 		padding: 2rem;
-		border-bottom: 1px solid #404f6a;
 	}
 
 	@media (max-width:30em) {
@@ -92,7 +90,7 @@ import { Image } from '@astrojs/image/components';
 	}
 	
 	.introduction-text {
-		margin-right: 6rem;
+		margin-right: 3rem;
 
 		@media (max-width:30em) {
 			position: absolute;
@@ -100,6 +98,12 @@ import { Image } from '@astrojs/image/components';
 			left: 20%;
 			color: white;
 			font-size: 0.9rem;
+		}
+	}
+
+	.introduction-description-text {
+		@media (max-width:30em) {
+			margin-top: 1rem;
 		}
 	}
 
