@@ -14,7 +14,7 @@ import { Image } from '@astrojs/image/components';
 			<p class="name">Hi, my name is <span>Austin Johnson.</span></p>
 		
 			<div class="introduction-description-text">
-				<h2>I build the Front End <br> of Enterprise Web Applications.</h2>
+				<h2>I build the Front End of Enterprise Web Apps.</h2>
 			
 				<p>I'm a developer specializing in Angular, Typescript, HTML, CSS, ASP.NET and C#.</p>
 			
@@ -83,32 +83,30 @@ import { Image } from '@astrojs/image/components';
 		padding: 2rem;
 	}
 
-	@media (max-width:30em) {
-		.introduction-hero{
-			/* display: relative !important; */
+	@media (max-width:40em) {
+		#intro  {
+			margin-bottom: 5rem;
 		}
 	}
 	
 	.introduction-text {
 		margin-right: 3rem;
+		text-wrap: balance;
 
-		@media (max-width:30em) {
+		@media (max-width:40em) {
 			position: absolute;
 			top: 40%;
-			left: 20%;
 			color: white;
 			font-size: 0.9rem;
+			text-align:center;
+			margin-right: 0;
+			z-index: 1;
 		}
 	}
 
 	.introduction-description-text {
-		@media (max-width:30em) {
-			margin-top: 1rem;
-		}
-	}
-
-	.introduction-image {
-		@media (max-width:30em) {
+		@media (max-width:40em) {
+			margin-top: 15rem;
 		}
 	}
 
