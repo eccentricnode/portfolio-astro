@@ -11,14 +11,18 @@ import { Image } from '@astrojs/image/components';
 <BaseLayout>
 	<section id="intro" class="introduction-hero">
 		<div class="introduction-text">
-			<p class="name">Hi, my name is <span>Austin Johnson.</span></p>
+			<p class="name">Hi, my name is <span>Austin Johnson</span></p>
 		
 			<div class="introduction-description-text">
-				<h2>I build the Front End of Enterprise Web Apps.</h2>
+				<h2>I build Front End <br> Web Applications</h2>
 			
-				<p>I'm a developer specializing in Angular, Typescript, HTML, CSS, ASP.NET and C#.</p>
+				<p>
+					I'm a developer specializing in
+					<br>
+					Angular, Typescript, HTML, CSS, ASP.NET and C#.
+				</p>
 			
-				<p>Currently, I'm working at <a>SwissRe Inc.</a></p>
+				<p>Currently, I'm working at <a href="https://www.swissre.com/" target="_blank ">SwissRe Inc.</a></p>
 			</div>
 		</div>
 		<Image src="/profile.jpg"
@@ -40,8 +44,8 @@ import { Image } from '@astrojs/image/components';
 <style>
 #intro {
   padding-bottom: 10rem;
-	@media((max-width:30em)) {
-		padding-bottom: 35rem;
+	@media((max-width:40em)) {
+		padding-bottom: 25rem;
 	}
 }
 
@@ -70,7 +74,7 @@ import { Image } from '@astrojs/image/components';
 		font-weight: 800;
 		margin: 0;
 
-		@media (max-width:30em) {
+		@media (max-width:40em) {
 			font-size: 2rem;
 		}
 	}
@@ -81,12 +85,6 @@ import { Image } from '@astrojs/image/components';
 		justify-content: center;
 		align-items: center;
 		padding: 2rem;
-	}
-
-	@media (max-width:40em) {
-		#intro  {
-			margin-bottom: 5rem;
-		}
 	}
 	
 	.introduction-text {
