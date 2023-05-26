@@ -41,22 +41,21 @@
   background-color: var(--nord2);
   padding: 10rem 0;
   text-align: center;
-}
+  & button {
+    background-color: var(--nord8);
+    color: var(--nord1);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 2rem 0;
 
-#contact button {
-  background-color: var(--nord8);
-  color: var(--nord1);
-  font-size: 1rem;
-  font-weight: 500;
-  padding: .5rem;
-  border-radius: 5px;
-  border: none;
-  margin: 2rem 0;
-}
-
-#contact button:hover {
-  cursor: pointer;
-  background-color: var(--nord10);
-  color: var(--nord4)
+    &:hover {
+      cursor: pointer;
+      background-color: var(--nord10);
+      color: var(--nord4)
+    }
+  }
 }
 </style>

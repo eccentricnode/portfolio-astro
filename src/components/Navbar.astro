@@ -70,22 +70,22 @@ import Icon from "astro-iconify";
     font-size: 90%;
     padding: 1rem;
     z-index: 1000;
-  }
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
+     & ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
 
-  nav h1 a {
-    font-family: var(--sans);
-    font-size: 80%;
+    h1 a{
+      font-family: var(--sans);
+      font-size: 80%;
+    }
   }
 
   .hamburger {
@@ -103,12 +103,6 @@ import Icon from "astro-iconify";
     background-color: var(--nord4);
   }
 
-  #nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .logo-icon {
     width: 3rem;
     color: var(--nord9);
@@ -118,20 +112,20 @@ import Icon from "astro-iconify";
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-  }
 
-  nav h1 span:hover {
-    color: var(--nord9);
+    &:hover {
+      color: var(--nord9);
+    }
   }
 
   nav a {
     color: var(--nord4);
     text-decoration: none;
     display: block;
-  }
 
-  nav a:hover {
-    color: var(--nord8);
+    &:hover {
+      color: var(--nord8);
+    }
   }
 
   .resume-button {
@@ -150,13 +144,13 @@ import Icon from "astro-iconify";
     #nav-menu {
       position: absolute;
       z-index: 10;
-      right: -100%;
+      left: -100%;
       top: 5rem;
       flex-direction: column;
       align-items: start;
       gap: 1rem;
       background-color: var(--nord0);
-      padding: 2rem 2rem 2rem 1rem;
+      padding: 2rem 2rem 2rem;
       width: 65%;
       border-radius: 10px;
       text-align: left;
@@ -165,7 +159,7 @@ import Icon from "astro-iconify";
     }
 
     #nav-menu.active {
-      right: 0;
+      left: 0;
     }
 
     nav ul li {
